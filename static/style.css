@@ -1,0 +1,85 @@
+/* Buttons */
+input[type=button]:not(:disabled), 
+input[type=submit]:not(:disabled){
+    color: #0077f6;
+}
+
+input[type=button]:not(:disabled):hover,
+input[type=submit]:not(:disabled):hover{
+    background: #007bff;
+    color: #ffffff;
+}
+[type=button]:active, 
+[type=submit]:active,
+[type=button]:focus,
+[type=submit]:focus {
+	outline:none;
+	border:none;
+}
+
+/* Top strip */
+.navbar-nav {
+	flex-direction: row;
+}
+
+.nav-item span {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0057b4;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* TODO lists */
+#todo_list_ul li a {
+	position: relative;
+}
+
+#todo_list_ul li a[aria-expanded="true"]:after{
+	content: ''; 
+    position: absolute; 
+    left: 20px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #007bff;
+}
+
+/* Tasks */
+.tasks_div{
+	margin: 0 0px 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+.tasks_table tr{
+    border-top: 1px solid #ffffff;
+	position: relative;
+}
+.tasks_table tr:before{
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 5px solid #7cb8f8;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.tasks_table td {
+	padding:3px 10px;
+}
+
+/* Delete task button */ 
+.tasks_div .close {
+	float:none;
+	line-height:0.75;
+}
+
+.tasks_div .close:hover{
+	color:red;
+}
+
+/* Error message on Login/Register pages */
+.error_message_div {
+	color: red;
+}
