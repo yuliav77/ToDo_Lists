@@ -80,7 +80,6 @@ $tasks = $sth->fetchAll();
 						
 							<tr>
 							   <td><?= $task['title'] ?></td>
-							   <!--<td>/**/</td>-->		
 							   <td>
 									<!-- Form to mark if task is done -->
 									<form method="POST" action="forms.php">
